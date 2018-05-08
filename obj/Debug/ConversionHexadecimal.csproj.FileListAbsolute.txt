@@ -1,0 +1,6 @@
+A:\C# Training\ConversionHexadecimal\obj\Debug\ConversionHexadecimal.csprojResolveAssemblyReference.cache
+A:\C# Training\ConversionHexadecimal\bin\Debug\ConversionHexadecimal.exe.config
+A:\C# Training\ConversionHexadecimal\bin\Debug\ConversionHexadecimal.exe
+A:\C# Training\ConversionHexadecimal\bin\Debug\ConversionHexadecimal.pdb
+A:\C# Training\ConversionHexadecimal\obj\Debug\ConversionHexadecimal.exe
+A:\C# Training\ConversionHexadecimal\obj\Debug\ConversionHexadecimal.pdb
