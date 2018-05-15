@@ -46,6 +46,13 @@ namespace ConversionHexadecimal
 				int sauvegarde = nombreAconvertir; // on sauvergarde la valeur
 				do{
 					
+					if(nombreAconvertir==0)// si le nombre binaire est 0 
+					{
+						
+						chaineBinaire+="0";
+						break;
+						
+					}
 					
 					
 					if(nombreAconvertir==1)// si le nombre binaire est 1
@@ -166,7 +173,7 @@ namespace ConversionHexadecimal
 						chaineBinaireInverse+= chaineBinaire[i];
 					}
 					
-					Console.WriteLine(chaineBinaire+" Apres inversion "+chaineBinaireInverse);
+					
 				
 				// INVEERSION FINI *********/
 				
@@ -230,7 +237,7 @@ namespace ConversionHexadecimal
 						 	
 						 	chaineHexaBonsens+=chaineHexa[j];
 						 }
-						 Console.WriteLine(chaineHexa+" Apres inversion "+chaineHexaBonsens);
+						
 				
 				
 				Console.WriteLine(sauvegarde+" vaut "+chaineHexaBonsens+"  en hexadecimal.");
