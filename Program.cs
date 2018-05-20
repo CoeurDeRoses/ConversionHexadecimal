@@ -34,13 +34,28 @@ namespace ConversionHexadecimal
 				// en multipliant successivement par deux le chiffre 1.
 				
 				//On enregistre le nombre dans une variable
-				Console.Write("Taper un nombre: ");
-				int nombreAconvertir = Convert.ToInt16(Console.ReadLine());
 				
-				//on retire le plus haut nombre successif de 1 inferieur au égal au nombre à convertir
-				//avec une autre variable nbSoustrait
-				
-				int nbSoustrait = 1; bool ok = true;// boolean pour sortir de la condition si le travail est fini
+                int nombreAconvertir = 0;
+                bool erreur = true;
+                do
+                {// Gestion d'erreur pour empêcher les lettres d'être enregistrés
+                    try
+                    {
+                        Console.Write("Taper un nombre: ");
+                        nombreAconvertir = Convert.ToInt16(Console.ReadLine());
+                        erreur = false;
+                    }
+
+                    catch (Exception)
+                    {
+                        Console.WriteLine("Il faut uniquement taper des chiffres");
+                    }
+                } while (erreur);
+
+                //on retire le plus haut nombre successif de 1 inferieur au égal au nombre à convertir
+                //avec une autre variable nbSoustrait
+
+                int nbSoustrait = 1; bool ok = true;// boolean pour sortir de la condition si le travail est fini
 				
 				
 				int sauvegarde = nombreAconvertir; // on sauvergarde la valeur
